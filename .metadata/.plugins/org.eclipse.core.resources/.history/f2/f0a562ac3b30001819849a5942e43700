@@ -1,0 +1,59 @@
+
+public class Employee {
+	
+	private String _fName;
+	private String _lName;
+	private String _phoneNumber;
+	private String _department;
+	private String _title;
+	private String _gender;
+	
+	public Employee(String fName, String lName, String phoneNumber, String department, String title, String gender) {
+		_fName = fName;
+		_lName = lName;
+		_phoneNumber = phoneNumber;
+		_department = department;
+		_title = title;
+		_gender = gender;
+	}
+	
+	public String getfName() {
+		return _fName;
+	}
+	public void setfName(String fName) {
+		this._fName = fName;
+	}
+	public String getlName() {
+		return _lName;
+	}
+	public void setlName(String lName) {
+		this._lName = lName;
+	}
+	public String getPhoneNumber() {
+		return _phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this._phoneNumber = phoneNumber;
+	}
+	public String getDepartment() {
+		return _department;
+	}
+	public void setDepartment(String department) {
+		this._department = department;
+	}
+	public String getTitle() {
+		return _title;
+	}
+	public void setTitle(String title) {
+		this._title = title;
+	}
+	public String getGender() {
+		return _gender;
+	}
+	public void setGender(String gender) {
+		this._gender = gender;
+	}
+	
+	
+
+}

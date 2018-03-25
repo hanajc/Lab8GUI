@@ -1,0 +1,44 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import java.util.*;
+
+public class GUI extends Frame implements ActionListener 
+{
+	JTextField fNameBox = new JTextField();
+	JTextField lNameBox = new JTextField();
+	JTextField phoneBox = new JTextField();
+	JTextField departmentBox = new JTextField();
+	Frame frame = new Frame();
+	
+	public GUI()
+	{
+		setLayout(new GridLayout(2, 2));
+		setTitle("New Employee");
+		setSize(350, 120);
+		
+		
+		
+		add(fNameBox);
+		add(lNameBox);
+		add(phoneBox);
+		add(departmentBox);
+		
+		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

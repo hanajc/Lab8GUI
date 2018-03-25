@@ -1,0 +1,72 @@
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import java.util.*;
+
+public class GUI extends Frame implements ActionListener 
+{
+	JTextField fNameBox = new JTextField(20);
+	JTextField lNameBox = new JTextField(20);
+	JTextField phoneBox = new JTextField(10);
+	JTextField departmentBox = new JTextField(50);
+	Frame frame = new Frame();
+	JPanel fields = new JPanel();
+	JPanel buttons = new JPanel();
+	
+	JButton submit = new JButton("Submit");
+	JButton exit = new JButton("Exit");
+	
+	JLabel firstName = new JLabel("First Name");
+	JLabel lastName = new JLabel("Last Name");
+	JLabel phone = new JLabel("Phone Number");
+	JLabel department = new JLabel("Department");
+	
+	
+	public GUI()
+	{
+		setLayout(new BorderLayout());
+		setTitle("New Employee");
+		setSize(600, 400);
+		fields.setLayout(GridLayout(4, 2));
+		buttons.setLayout(GridLayout(1, 2));
+		
+		fields.add(firstName);
+		fields.add(fNameBox);
+		fields.add(lastName);
+		fields.add(lNameBox);
+		fields.add(phone);
+		fields.add(phoneBox);
+		fields.add(department);
+		fields.add(departmentBox);
+		buttons.add(submit);
+		buttons.add(exit);
+		
+		add(fields, BorderLayout.CENTER);
+		add(buttons, BorderLayout.SOUTH);
+		setVisible(true);
+	}
+
+	private LayoutManager GridLayout(int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}
